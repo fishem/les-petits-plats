@@ -533,3 +533,20 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.bg-food-image {
+  background-image: url('src/img/lampos-aritonang-24gR_9lCdes-unsplash 1.png');
+}
+
+.font-anton {
+  font-family: "Anton", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-yellow {
+  --tw-text-opacity: 1;
+  color: rgb(255 209 91 / var(--tw-text-opacity));
+}
