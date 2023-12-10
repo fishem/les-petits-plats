@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "food-image":
-          "url('src/img/lampos-aritonang-24gR_9lCdes-unsplash 1.png')",
+          "url('../src/img/lampos-aritonang-24gR_9lCdes-unsplash 1.svg')",
       },
       colors: {
         yellow: "#FFD15B",
@@ -14,6 +14,12 @@ module.exports = {
       fontFamily: {
         manrope: ['"Manrope"', ...defaultTheme.fontFamily.sans],
         anton: ['"Anton"', ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        xl: "3rem",
+      },
+      spacing: {
+        890: "890px",
       },
     },
   },
