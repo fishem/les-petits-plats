@@ -3,8 +3,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,26 +10,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
     <title>Les petits plats</title>
   </head>
   <body>
-    <header class="bg-food-image bg-no-repeat bg-cover">
+    <header class="bg-food-image bg-no-repeat bg-cover h-[667px]">
       <div class="pt-16 pl-8">
         <img src="../src/img/Logo.png" alt="logo les petits plats" />
       </div>
       <div class="flex flex-col mt-40 items-center">
         <h1
-          class="text-yellow text-xl text-center uppercase font-anton mb-6 w-890"
+          class="text-yellow text-xl text-center uppercase font-anton mb-6 max-w-[890px] w-full"
         >
           cherchez parmi plus de 1500 recettes du quotidiens, simples et
           délicieuses
         </h1>
-        <form action="" class="flex w-[60rem] h-[4rem]">
+        <form action="" class="flex w-full max-w-[60rem] h-[4rem]">
           <input
             class="text-sm rounded-l pl-4 w-full h-full"
             type="type"
@@ -50,19 +50,31 @@
       <div id="search-toggle-container" class="ml-16 mr-16 pt-8">
         <div class="flex justify-between items-center pb-8">
           <div class="grid grid-cols-3 gap-14">
-            <div class="rounded-md bg-white w-48 h-14 pl-5 pt-4">
-              ingrédient
+            <div
+              class="font-medium font-manrope text-[16px] rounded-md bg-white w-48 h-14 pl-5 pt-4"
+            >
+              Ingrédients
             </div>
-            <div class="rounded-md bg-white w-48 h-14 pl-5 pt-4">Appareils</div>
-            <div class="rounded-md bg-white w-48 h-14 pl-5 pt-4">
+            <div
+              class="font-medium font-manrope text-[16px] rounded-md bg-white w-48 h-14 pl-5 pt-4"
+            >
+              Appareils
+            </div>
+            <div
+              class="font-medium font-manrope text-[16px] rounded-md bg-white w-48 h-14 pl-5 pt-4"
+            >
               Ustensiles
             </div>
           </div>
-          <div class="text-[21px] font-bold font-anton">03 recettes</div>
+          <div id="recipe-counter" class="text-[21px] font-normal font-anton">
+            03 recettes
+          </div>
         </div>
         <div id="result-search-bar">
           <div class="grid grid-cols-5 gap-5">
-            <div class="rounded-md bg-yellow w-52 h-14 pl-5 pt-4">
+            <div
+              class="font-normal font-manrope text-[14px] rounded-md bg-yellow w-52 h-14 pl-5 pt-4"
+            >
               Crème de coco
             </div>
           </div>
@@ -78,21 +90,31 @@
             <div id="temps" class="h-[253px] w-[380px]">
               <div id="recette-image" class=""></div>
             </div>
-            <h2 id="titre-de-la-recette" class="font-anton text-base pl-5 pb-8">
-              Food title
+            <h2
+              id="titre-de-la-recette"
+              class="font-anton text-[18px] text-base pl-5 pb-8 font-normal"
+            >
+              Limonade de Coco
             </h2>
             <div id="fram-1" class="pl-5 pr-5">
               <div id="recette">
-                <h3 class="font-manrope text-xs uppercase text-[#7A7A7A] pb-4">
+                <h3
+                  class="font-manrope text-[12px] font-bold uppercase text-[#7A7A7A] pb-4"
+                >
                   Recette
                 </h3>
-                <p id="group-recette" class="font-manrope text-base pb-20">
+                <p
+                  id="group-recette"
+                  class="font-manrope text-[14px] pb-20 font-normal"
+                >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Corporis, totam.
                 </p>
               </div>
               <div id="ingredients">
-                <h3 class="font-manrope text-xs uppercase text-[#7A7A7A] pb-4">
+                <h3
+                  class="font-manrope text-[12px] font-bold uppercase text-[#7A7A7A] pb-4"
+                >
                   ingrédients
                 </h3>
                 <div id="group-ingredient" class="grid grid-cols-2 gap-9">
@@ -108,12 +130,15 @@
                     </p>
                   </div>
                   <div id="condiments">
-                    <p id="elements" class="font-manrope">
+                    <p
+                      id="elements"
+                      class="font-manrope text-[14px] font-medium"
+                    >
                       Lorem ipsum dolor sit.
                     </p>
                     <p
                       id="quantity"
-                      class="text-[#7A7A7A] font-manrope text-xs"
+                      class="text-[#7A7A7A] font-manrope text-[14px] font-normal"
                     >
                       Lorem.
                     </p>
